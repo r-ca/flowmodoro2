@@ -10,7 +10,7 @@ interface Task {
   name: string;
 }
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'http://localhost:6000/api';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

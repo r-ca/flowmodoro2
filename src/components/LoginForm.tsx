@@ -5,7 +5,7 @@ interface LoginFormProps {
   onRegisterClick: () => void;
 }
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'http://localhost:6000/api';
 
 const LoginForm: React.FC<LoginFormProps> = ({ onLoginSuccess, onRegisterClick }) => {
   const [username, setUsername] = useState('');
