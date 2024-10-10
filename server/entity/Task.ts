@@ -5,14 +5,14 @@ import { Timer } from "./Timer";
 @Entity()
 export class Task {
     @PrimaryGeneratedColumn()
-    id: number;
+    id!: number;
 
     @Column()
-    name: string;
+    name!: string;
 
     @ManyToOne(() => User, user => user.tasks)
-    user: User;
+    user!: User;
 
     @OneToMany(() => Timer, timer => timer.task)
-    timers: Timer[];
+    timers!: Timer[];
 }
