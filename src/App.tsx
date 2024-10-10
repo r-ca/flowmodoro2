@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Play, Pause, RotateCcw } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import TaskList from './components/TaskList';
 import Timer from './components/Timer';
 import LoginForm from './components/LoginForm';
@@ -10,7 +9,7 @@ interface Task {
   name: string;
 }
 
-const API_URL = 'http://localhost:6000/api';
+const API_URL = 'http://localhost:3000/api';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

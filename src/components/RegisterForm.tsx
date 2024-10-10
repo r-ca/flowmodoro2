@@ -4,7 +4,7 @@ interface RegisterFormProps {
   onRegisterSuccess: () => void;
 }
 
-const API_URL = 'http://localhost:6000/api';
+const API_URL = 'http://localhost:3000/api';
 
 const RegisterForm: React.FC<RegisterFormProps> = ({ onRegisterSuccess }) => {
   const [username, setUsername] = useState('');
