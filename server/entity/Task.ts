@@ -7,7 +7,7 @@ export class Task {
     @PrimaryGeneratedColumn()
     id!: number;
 
-    @Column()
+    @Column("text")
     name!: string;
 
     @ManyToOne(() => User, user => user.tasks)
